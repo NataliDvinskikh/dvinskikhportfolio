@@ -1,0 +1,239 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #09103b;
+}
+
+#particles-js {
+  /* position: absolute; */
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  /* background-image: url(""); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.par {
+  color: white;
+  /* margin-top: 300px; */
+  /* margin-left: 20px; */
+  font-size: 40px;
+  position: absolute;
+}
+
+.par_description {
+  color: white;
+  position: absolute;
+  margin-top: 100px;
+  font-size: 35px;
+}
+
+.btn {
+  position: absolute;
+  margin-top: 230px;
+  background-color: #14279B;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_contact {
+  margin-top: 370px;
+}
+
+
+@media all and (max-width:500px ) {
+  #particles-js {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  flex-wrap: wrap;
+  }
+
+.par {
+ align-self: center;
+ margin-left: 50px;
+ margin-top: 150px;
+}
+
+.par_description {
+  margin-top: 270px;
+  font-size: 30px;
+}
+.btn {
+  margin-top: 330px;
+  padding: 14px;
+  font-size: 17px;
+}
+}
+
+@media all and (max-width:400px) {
+  .par_description {
+    margin-top: 320px;
+    font-size: 25px;
+  }
+  .btn {
+    margin-top: 380px;
+    padding: 14px;
+    font-size: 17px;
+  }
+}
+
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: #09103b;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 370px;
+  width: 450px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.photo_first {
+  background-image: url(/app1.jpg) ;
+}
+
+.photo_second {
+  background-image: url(/app2.jpg) ;
+}
+
+.photo_third {
+  background-image: url(/app3.jpg);
+}
+
+.photo_four {
+  background-image: url(/app4.jpg) ;
+}
+
+.photo_five {
+  background-image: url(/app5.jpg) ;
+}
+
+.photo_six {
+  background-image: url(/app6.jpg) ;
+}
+
+.photo_seven {
+  background-image: url(/app7.jpg) ;
+}
+
+.photo_eight {
+  background-image: url(/app8.jpg) ;
+}
+
+.photo_nine {
+  background-image: url(/app9.jpg) ;
+}
+
+.photo_ten {
+  background-image: url(/app10.jpg) ;
+}
+
+.photo_eleven {
+  background-image: url(/app11.jpg) ;
+}
+
+.photo_twelve {
+  background-image: url(/app12.jpg) ;
+}
+
+.photo_thirteen {
+  background-image: url(/app13.jpg) ;
+}
+
+.photo_fourteen {
+  background-image: url(/app14.jpg) ;
+}
+
+.photo_fifteen {
+  background-image: url(/app15.jpg) ;
+}
+
+.photo_sixteen {
+  background-image: url(/app16.jpg) ;
+}
+
+.photo_seventeen {
+  background-image: url(/app17.jpg) ;
+}
+
+.photo_eigteen {
+  background-image: url(/app18.jpg) ;
+}
+
+.item {
+position: relative;
+display: flex;
+/* align-items: center; */
+justify-content: center;
+}
+
+.project_link {
+  position: absolute;
+  bottom: 0.1rem;
+  transition: bottom 0.3s;
+  opacity:0;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #14279B;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+h3 {
+  opacity:0;
+  position: absolute;
+  top: 55px;
+  color: #14279B;
+}
+
+
+.selected {
+  opacity: 0.9;
+}
+
+.selected h3 {
+  font-size: 30px;
+  transition: all 1s ease-in;
+  color: #14279B;
+  opacity:1;
+}
+
+.selected .project_link {
+  font-size: 30px;
+  transition: all 1s ease-in;
+  opacity: 2;
+}
